@@ -1,0 +1,8 @@
+<p>Please enter your Username:</p>
+<input type="text" class="form-control" [(ngModel)]="username" />
+
+<p>Text entered in the above box which is "{{ username }}", would be used for booking your tickets. In case you do not agree
+  and would like to reset please click the below button.
+</p>
+
+<button class="btn btn-primary" (click)="onResetUserName()" [disabled]="disableReset()">Reset My Username</button>

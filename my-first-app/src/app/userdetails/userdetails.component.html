@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="toggleDisplay()">{{ displayButtonText }}</button>
+<p *ngIf="displayBookingInfo"> Your Booking ID is: 675ABU357 </p>
+<hr>
+<p>Number of times you clicked above button: </p>
+<p *ngFor="let clickCount of clickArray" [ngStyle]="{backgroundColor: getLogBackgroundColor(clickCount)}"
+[ngClass]= "{whiteText: clickCount > 4}">
+  {{ clickCount }}
+</p>
