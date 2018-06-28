@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+      <app-gamecontrol (numberReturned)="OnNumberReturned($event)"></app-gamecontrol>
+      <div class="row">
+        <div class="col-sm-5">
+            <app-odd *ngFor="let num of oddNumbers" [inputNumber] = "num"></app-odd>
+        </div>
+        <div class="col-sm-5">
+            <app-even *ngFor="let num of evenNumbers" [inputNumber] = "num"></app-even>
+        </div>
+      </div>
+ </div>
+</div>
